@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+
+<suite name="Suite" parallel="method" threadCount="2">
+	<!-- <listeners>
+		<listener class-name="ListenerClass" />
+	</listeners>
+ -->
+	<test name="Test">
+		<groups>
+			<run>
+				<include name = "Smoke"/>
+				<include name = "Sanity"/>
+				<include name = "Regression"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="test.TestRunner"/>
+			<!-- <class name="test.TestNG.Extend_Init" /> --> <!-- <class name="test.TestNG.Extend_Init"/> -->
+		</classes>
+	</test>
+</suite>
+
+
+<!-- Purpose of TestNG.xml is it facilitate user to run testsuite from one 
+	point -->
+
